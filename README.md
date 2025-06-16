@@ -51,7 +51,7 @@ Broadcast: 192.168.0.255
 Hosts Disponíveis: 254
 ```
 
-## 📸 Captura de Tela (opcional)
+## 📸 Captura de Tela
 ![tela_ipcalculator](https://github.com/user-attachments/assets/f555fd6d-955d-4716-854a-40e826813506)
 
 ## 🙇‍♂️ Autor
