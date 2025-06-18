@@ -154,56 +154,19 @@ class MainActivity : AppCompatActivity() {
     // Compartilhamento geral sem formatação de textos
     fun compartilharTexto(context: Context) {
 
-        val assunto = "Dados da Rede"
+        val assunto = "Dados IP de Rede"
+
         val texto = """
-        Dados para configuração:
+        Segue os dados dos IPs da rede informada:
         
-        Endereço IP: ${ip.text}
+        IP: ${ip.text}
         Máscara: ${mascara.text}
-        
+
         Rede: ${rede.text}/${bitMask.text}
-          Primeiro IP: ${primeiro.text}
-          Último IP: ${ultimo.text}
         Broadcast: ${broadcast.text}
         
-        Sugestão configuração
-        Lan computador para testes:
-        IP de lan do equipamento de testes:
-        ${lanIP}
-        IP gateway:
-        ${gwIP}
-        Mascara:
-        ${mascara.text}
-        DNS: 
-        verifique com seu provedor
-        
-        
-        -----------------------------------
-        DNS públicos:
-        🔹 DNS do Google
-        Primário: 8.8.8.8
-        Secundário: 8.8.4.4
-        Vantagens: Rápido e confiável
-        🔹 Cloudflare (1.1.1.1)
-        Primário: 1.1.1.1
-        Secundário: 1.0.0.1
-        Vantagens: Privacidade aprimorada e baixa latência
-        🔹 Quad9 (Segurança Avançada)
-        Primário: 9.9.9.9
-        Secundário: 149.112.112.112
-        Vantagens: Filtragem contra malwares e ameaças
-        
-       
-        Se você busca mais privacidade, o Cloudflare (1.1.1.1) e o Quad9 (9.9.9.9):
-        são boas opções. 
-        
-        Já para desempenho, o Google DNS (8.8.8.8):
-        é bem rápido e confiável.
-   
-      IP Calculator v.1.0
-      Designed by Laudemir
-      e-mail: laudemir.oliveira@gmail.com
-      
+        Primeiro IP utilizável: ${primeiro.text}
+        Último IP utilizável: ${ultimo.text}
     """.trimIndent()
 
         // chama a classe()
@@ -215,36 +178,15 @@ class MainActivity : AppCompatActivity() {
     // Compartilhar
     fun compartilharWhatsapp(context: Context) {
         val text = """
-        *Dados da rede*
+        *Dados IPs de rede*
         
-        *_Endereço IP:_* ${ip.text}
+        *_IP:_* ${ip.text}
         *_Máscara:_* ${mascara.text}
         
         *_Rede:_* ${rede.text}/${bitMask.text}
         *_Primeiro IP:_* *${primeiro.text}*
         *_Último IP:_* *${ultimo.text}*
         *_Broadcast:_* ${broadcast.text}
-         
-        *_Sugestão configuração_*
-        *_Lan computador para testes:_*
-        *_IP de lan:_* 
-        *${lanIP}*
-        *_IP gateway:_* 
-        *${gwIP}*
-        *_Mascara:_* 
-        *${mascara.text}*
-        *_DNS:_* 
-        verifique com seu provedor
-        
-        *DNS do Google*
-        *_Primário:_* 8.8.8.8
-        *_Secundário:_* 8.8.4.4
-        *_Vantagens:_* Rápido e confiável
-      
-      IP Calculator v.1.0
-      Designed by Laudemir
-      e-mail: laudemir.oliveira@gmail.com
-
     """.trimIndent()
 
         // chama a classe Share(),
